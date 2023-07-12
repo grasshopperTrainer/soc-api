@@ -1,0 +1,12 @@
+services:
+  web-api:
+    image: stayout-campground_web-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_PHASE: dev
+        GUNICORN_DOMAIN: localhost
+        GUNICORN_PORT: 8000
+    ports:
+      - "80:80"
