@@ -1,7 +1,7 @@
 # 구성
-fastify api 단일 서버 포함
+fastify graphql api 단일 서버
 # 구조
-nginx reverse proxy - node(fastify) 를 통해 제공됨
+nginx(reverse proxy) - node(fastify) 를 통해 제공
 
 # 빌드
 ## 개발 run dev

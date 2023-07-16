@@ -39,7 +39,7 @@ RUN envsubst < nginx_conf/nginx_${APP_PHASE}.conf | sed 's/%/$/g' > /etc/nginx/c
 FROM nginx-base as run_dev
 WORKDIR ${BASE_DIR}
 # fastify
-COPY soc-api soc-api
+COPY app app
 
 FROM ${APP_PHASE} AS final
 ENTRYPOINT [ "/entrypoint.sh" ]

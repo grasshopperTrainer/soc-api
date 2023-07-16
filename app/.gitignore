@@ -1,3 +1,6 @@
+# env: env 는 배포 환경에 맞추어 개별적으로 주입하는게 옳다 함 https://www.npmjs.com/package/dotenv FAQ 참고
+.env*
+
 # Logs
 logs
 *.log
